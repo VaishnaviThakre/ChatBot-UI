@@ -1,0 +1,333 @@
+body {
+  padding: 5%;
+  background-color: #F5F5F5;
+}
+
+.container {
+  padding:0;
+  background-color: #FFF; 
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+  height: 700px;
+  position: relative;
+}
+
+/* ===== MENU ===== */
+.menu {
+  float: left;
+  height: 700px;;
+  width: 70px;
+  background: #4768b5;
+  background: -webkit-linear-gradient(#4768b5, #35488e);
+  background: -o-linear-gradient(#4768b5, #35488e);
+  background: -moz-linear-gradient(#4768b5, #35488e);
+  background: linear-gradient(#4768b5, #35488e);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19);
+}
+
+.menu .items {
+  list-style:none;
+  margin: auto;
+  padding: 0;
+}
+
+.menu .items .item {
+  height: 70px;
+  border-bottom: 1px solid #6780cc;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  color: #9fb5ef;
+  font-size: 17pt;
+}
+
+.menu .items .item-active {
+  background-color:#5172c3;
+  color: #FFF;
+}
+
+.menu .items .item:hover {
+  cursor: pointer;
+  background-color: #4f6ebd;
+  color: #cfe5ff;
+}
+
+/* === CONVERSATIONS === */
+
+.discussions {
+  width: 35%;
+  height: 700px;
+  box-shadow: 0px 8px 10px rgba(0,0,0,0.20);
+  overflow: hidden;
+  background-color: #87a3ec;
+  display: inline-block;
+}
+
+.discussions .discussion {
+  width: 100%;
+  height: 90px;
+  background-color: #FAFAFA;
+  border-bottom: solid 1px #E0E0E0;
+  display:flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.discussions .search {
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  color: #E0E0E0;
+}
+
+.discussions .search .searchbar {
+  height: 40px;
+  background-color: #FFF;
+  width: 70%;
+  padding: 0 20px;
+  border-radius: 50px;
+  border: 1px solid #EEEEEE;
+  display:flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.discussions .search .searchbar input {
+  margin-left: 15px;
+  height:38px;
+  width:100%;
+  border:none;
+  font-family: 'Montserrat', sans-serif;;
+}
+
+.discussions .search .searchbar *::-webkit-input-placeholder {
+    color: #E0E0E0;
+}
+.discussions .search .searchbar input *:-moz-placeholder {
+    color: #E0E0E0;
+}
+.discussions .search .searchbar input *::-moz-placeholder {
+    color: #E0E0E0;
+}
+.discussions .search .searchbar input *:-ms-input-placeholder {
+    color: #E0E0E0;
+}
+
+.discussions .message-active {
+  width: 98.5%;
+  height: 90px;
+  background-color: #FFF;
+  border-bottom: solid 1px #E0E0E0;
+}
+
+.discussions .discussion .photo {
+    margin-left:20px;
+    display: block;
+    width: 45px;
+    height: 45px;
+    background: #E6E7ED;
+    -moz-border-radius: 50px;
+    -webkit-border-radius: 50px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.online {
+  position: relative;
+  top: 30px;
+  left: 35px;
+  width: 13px;
+  height: 13px;
+  background-color: #8BC34A;
+  border-radius: 13px;
+  border: 3px solid #FAFAFA;
+}
+
+.desc-contact {
+  height: 43px;
+  width:50%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: #989898;
+  font-size: 8pt;
+  padding-left: 30px;
+  font-family:'Montserrat', sans-serif;
+}
+
+.desc-contact .name {
+  font-family:'Montserrat', sans-serif;
+  color: #666;
+  font-weight: bold;
+}
+
+.timer {
+  color: #B3B3B3;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 8pt;
+}
+
+.count {
+  padding: 10px;
+  background-color: #4768b5;
+  font-family:'Montserrat', sans-serif;
+  color: #FFF;
+  border-radius: 100px;
+}
+
+.notif {
+  display: flex;
+  align-items: center;
+}
+
+.discussions .discussion:hover {
+  background-color: #EDEDED;
+}
+
+.discussions .discussion .badge {
+  height: 15px;
+  width: 15px;
+  background-color: #3F51B5;
+  margin-right: 20px;
+  color: #FFF;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  font-size: 10pt;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50px;
+}
+
+/* ====== CHAT ======= */
+
+.chat {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 65%;
+  height: 700px;
+  background-color: #FDFDFD;
+}
+
+.header-chat {
+  width: 100%;
+  height: 90px;
+  display:flex;
+  align-items: center;
+  padding: 0 30px;
+  box-shadow: 0px 4px 5px rgba(0,0,0,0.10);
+}
+
+.header-chat .icon {
+  color: #999;
+  cursor: pointer;
+}
+
+.header-chat .name {
+  margin-left: 20px;
+  font-family: 'Montserrat', sans-serif;
+  color: #999;
+  font-weight: bold;
+}
+
+.messages-chat {
+  height: 550px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+.messages-chat .message {
+  display:flex;
+  align-items: center;
+  margin: 30px 40px;
+}
+
+.messages-chat .message .photo {
+  display: block;
+  width: 60px;
+  height: 60px;
+  background: #E6E7ED;
+  -moz-border-radius: 50px;
+  -webkit-border-radius: 50px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.messages-chat .message .text {
+  padding: 15px;
+  color: #333;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 12pt;
+  background: #FFF;
+  border-radius: 25px;
+  box-shadow: 0px 4px 10px rgba(0,0,0,0.15);
+  margin-left: 10px;
+}
+
+.messages-chat .message .text::after {
+  content: '';
+  position: absolute;
+  border-top: 15px solid #FFF;
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+  top: 15px;
+  left: -15px;
+}
+
+.left-message .text {
+  border-top-left-radius: 0;
+}
+
+.right-message {
+  justify-content: flex-end;
+}
+
+.right-message .text {
+  margin-right: 10px;
+  margin-left: 0;
+  background: #4768b5;
+  color: #FAFAFA;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 0;
+  box-shadow: 0px 4px 10px rgba(0,0,0,0.10);
+}
+
+.right-message .text::after {
+  content: '';
+  position: absolute;
+  border-top: 15px solid #4768b5;
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+  top: 15px;
+  right: -15px;
+  left: auto;
+}
+
+.footer-chat {
+  height: 60px;
+  width: 100%;
+  display:flex;
+  align-items: center;
+  justify-content: space-around;
+  border-top: 1px solid #DDD;
+}
+
+.footer-chat .write-message {
+  height: 55px;
+  width: 75%;
+  border: none;
+  padding: 0 25px;
+  color: #666;
+  font-weight: bold;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.footer-chat .write-message::placeholder {
+    color: #999;
+}
+
+.footer-chat .write-message:focus {
+    outline: none;
+}
